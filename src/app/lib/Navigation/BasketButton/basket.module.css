@@ -1,0 +1,7 @@
+.label {
+	@apply inline-block relative;
+}
+
+.badge {
+	@apply inline-block absolute -right-10 top-0 w-[1.5625rem] h-[1.5625rem] leading-[1.5625rem] rounded-full text-white text-center text-xs sm:-right-[1.875rem] sm:-top-[0.9375rem];
+}

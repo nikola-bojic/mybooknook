@@ -1,0 +1,15 @@
+.wrapper {
+	@apply fixed bottom-0 right-0 w-full bg-white border-t-2 border-black text-[80%] z-10 flex flex-row justify-start items-center shadow-sm p-4 md:fixed md:bottom-5 md:right-5 md:w-[37.5rem] md:border-2 md:border-black md:rounded-2xl;
+
+	.message {
+		@apply pr-4 m-0;
+	}
+
+	.button {
+		@apply inline-block font-normal leading-normal text-center no-underline align-middle cursor-pointer select-none bg-[#212529] text-white border border-[#212529] px-4 py-2 rounded-full text-[80%] transition-colors;
+	}
+	
+	.button:hover {
+		@apply bg-[#fd3f14] border-[#fd3f14];
+	}
+}

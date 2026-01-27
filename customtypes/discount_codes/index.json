@@ -1,0 +1,57 @@
+{
+  "format": "custom",
+  "id": "discount_codes",
+  "label": "Discount Codes",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "code": {
+        "type": "Group",
+        "config": {
+          "label": "Code",
+          "repeat": true,
+          "fields": {
+            "code": {
+              "type": "Text",
+              "config": {
+                "label": "Code",
+                "placeholder": ""
+              }
+            },
+            "percentage_off": {
+              "type": "Number",
+              "config": {
+                "label": "Percentage Off",
+                "placeholder": ""
+              }
+            },
+            "start_date": {
+              "type": "Date",
+              "config": {
+                "label": "Start Date",
+                "placeholder": ""
+              }
+            },
+            "expiry_date": {
+              "type": "Date",
+              "config": {
+                "label": "Expiry Date",
+                "placeholder": ""
+              }
+            },
+            "active": {
+              "type": "Boolean",
+              "config": {
+                "label": "Active",
+                "placeholder_false": "No",
+                "placeholder_true": "Yes",
+                "default_value": false
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

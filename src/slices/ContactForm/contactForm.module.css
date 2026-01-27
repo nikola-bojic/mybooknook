@@ -1,0 +1,86 @@
+.container {
+	@apply w-full mx-auto px-4 flex flex-col justify-start items-center max-w-screen-lg;
+}
+
+.formContainer {
+	@apply flex flex-col w-full max-w-3xl border bg-white rounded-md shadow-md p-10 mb-10;
+}
+
+.formInner {
+	@apply flex flex-col w-full justify-evenly mb-3;
+}
+
+.errorMessage {
+	@apply mb-5 w-full text-center bg-yellow-100 p-4 pb-3;
+
+	a {
+		@apply no-underline text-red-500;
+	}
+}
+
+.formRow {
+	@apply flex flex-col sm:flex-row justify-start items-start mb-3 w-full;
+}
+
+.label {
+	@apply w-full sm:w-1/4 whitespace-nowrap mb-3 sm:mb-0;
+}
+
+.inputContainer {
+	@apply w-full sm:w-3/4;
+}
+
+.inputWrap {
+	@apply relative w-full;
+
+	&.error {
+		@apply text-red-600;
+	}
+
+	&.error .input,
+	&.error .textarea {
+		@apply border-red-600;
+	}
+
+	&.valid .input,
+	&.valid .textarea {
+		@apply border-green-600;
+	}
+}
+
+.input {
+	@apply block w-full py-2 px-3 text-base font-normal leading-normal text-gray-900 bg-white bg-clip-padding border border-gray-300 rounded transition-colors mb-1 max-w-[62.5rem];
+}
+
+.input:focus {
+	@apply text-gray-900 bg-white border-blue-500 outline-none ring-4 ring-blue-200;
+}
+
+.textarea {
+	@apply block w-full py-2 px-3 text-base font-normal leading-normal text-gray-900 bg-white bg-clip-padding border border-gray-300 rounded transition-colors mb-1 max-w-[75rem];
+	resize: vertical;
+}
+
+.textarea:focus {
+	@apply text-gray-900 bg-white border-blue-500 outline-none ring-4 ring-blue-200;
+}
+
+.errorText {
+	@apply flex flex-col justify-start items-start w-full;
+}
+
+.errorMessageText {
+	@apply text-red-600 mt-2 mb-1 sm:mb-0;
+}
+
+.buttonContainer {
+	@apply flex flex-row justify-start items-start flex-grow mt-4;
+}
+
+.submitButton {
+	@apply inline-block leading-normal text-center no-underline align-middle cursor-pointer select-none bg-branded-purple text-white rounded-md px-5 py-2 font-semibold hover:bg-branded-pink transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.successContainer {
+	@apply mb-5 w-full text-center border rounded-md bg-white p-4 pb-3 max-w-2xl shadow-md;
+}

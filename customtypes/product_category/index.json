@@ -1,0 +1,173 @@
+{
+  "format": "custom",
+  "id": "product_category",
+  "label": "Product Category",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "plural_url": {
+        "type": "Text",
+        "config": {
+          "label": "Plural URL",
+          "placeholder": ""
+        }
+      },
+      "name": {
+        "type": "Text",
+        "config": {
+          "label": "Name",
+          "placeholder": ""
+        }
+      },
+      "price": {
+        "type": "Number",
+        "config": {
+          "label": "Price",
+          "placeholder": ""
+        }
+      },
+      "postage_price_uk": {
+        "type": "Number",
+        "config": {
+          "label": "Postage Price - UK",
+          "placeholder": ""
+        }
+      },
+      "postage_price_eu": {
+        "type": "Number",
+        "config": {
+          "label": "Postage Price - Europe",
+          "placeholder": ""
+        }
+      },
+      "postage_price_na": {
+        "type": "Number",
+        "config": {
+          "label": "Postage Price - North America",
+          "placeholder": ""
+        }
+      },
+      "postage_price_sa": {
+        "type": "Number",
+        "config": {
+          "label": "Postage Price - South America",
+          "placeholder": ""
+        }
+      },
+      "postage_price_af": {
+        "type": "Number",
+        "config": {
+          "label": "Postage Price - Africa",
+          "placeholder": ""
+        }
+      },
+      "postage_price_as": {
+        "type": "Number",
+        "config": {
+          "label": "Postage Price - Asia",
+          "placeholder": ""
+        }
+      },
+      "postage_price_oc": {
+        "type": "Number",
+        "config": {
+          "label": "Postage Price - Oceania",
+          "placeholder": ""
+        }
+      },
+      "postage_price_other": {
+        "type": "Number",
+        "config": {
+          "label": "Postage Price - Other",
+          "placeholder": ""
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "video": {
+              "type": "SharedSlice"
+            },
+            "two_columns": {
+              "type": "SharedSlice"
+            },
+            "hero": {
+              "type": "SharedSlice"
+            },
+            "image": {
+              "type": "SharedSlice"
+            },
+            "text": {
+              "type": "SharedSlice"
+            },
+            "gallery": {
+              "type": "SharedSlice"
+            },
+            "contact_form": {
+              "type": "SharedSlice"
+            },
+            "carousel": {
+              "type": "SharedSlice"
+            },
+            "faq": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "SEO & Metadata": {
+      "meta_title": {
+        "config": {
+          "label": "Meta Title",
+          "placeholder": "A title of the page used for social media and search engines"
+        },
+        "type": "Text"
+      },
+      "meta_description": {
+        "config": {
+          "label": "Meta Description",
+          "placeholder": "A brief summary of the page"
+        },
+        "type": "Text"
+      },
+      "meta_image": {
+        "config": {
+          "label": "Meta Image",
+          "constraint": {
+            "height": 2400,
+            "width": 2400
+          },
+          "thumbnails": []
+        },
+        "type": "Image"
+      }
+    },
+    "Layout": {
+      "background_image": {
+        "type": "Image",
+        "config": {
+          "label": "Background Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "background_colour": {
+        "type": "Color",
+        "config": {
+          "label": "Background Colour",
+          "placeholder": ""
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			line-height: 1.5;
+			font-size: 13px;
+		}
+
+		.container {
+			width: 80%;
+			margin: auto;
+		}
+
+
+		h2 {
+			font-size: 17px;
+			margin: 0;
+			margin-bottom: 10px;
+		}
+
+		h3 {
+			font-size: 15px;
+			margin: 0;
+			margin-bottom: 10px;
+		}
+
+		h4 {
+			font-size: 13px;
+			margin: 0;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+
+		p {
+			font-size: 13px;
+			margin: 0;
+			line-height: 1.5;
+		}
+
+		a {
+			color: #000;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		.header {
+			text-align: center;
+			margin-top: 20px;
+			margin-bottom: 40px;
+		}
+
+		.header img {
+			width: 100%;
+			max-width: 200px;
+		}
+
+		.top-section {
+			margin-bottom: 20px;
+		}
+
+		.address-section {
+			margin-bottom: 20px;
+		}
+
+		.order-section {
+			margin-bottom: 20px;
+		}
+
+		.order-table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+
+		.order-table th,
+		.order-table td {
+			border: 1px solid #ddd;
+			padding: 10px;
+			text-align: left;
+			vertical-align: top;
+		}
+
+		.order-table td img {
+			width: 100%;
+			max-width: 100px;
+			margin: 0;
+		}
+
+		.totals {
+			text-align: right;
+			margin-bottom: 20px;
+		}
+
+		.totals span {
+			display: block;
+		}
+
+		.totals span.total {
+			margin-top: 10px;
+		}
+
+		.footer {
+			border-top: 1px solid #ccc;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			text-align: center;
+			font-size: 0.9em;
+			color: #555;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="header">
+			<img src="https://mybooknook.co.uk/my-book-nook-logo.png" alt="My Book Nook">
+		</div>
+
+		<div class="top-section">
+			<h2>{{header}}</h2>
+			<p>Order: {{order_id}}</p>
+		</div>
+
+		<div class="address-section">
+			<h3>{{shipping_header}}</h3>
+			<p>{{shipping_address}}</p>
+			{{customer_email}}
+		</div>
+
+		<div class="order-section">
+			<h3>Your order</h3>
+			<table class="order-table">
+				<thead>
+					<tr>
+						<th colspan="2">Item</th>
+						<th style="width: 100px">Quantity</th>
+						<th style="width: 100px">Price</th>
+					</tr>
+				</thead>
+				<tbody>
+					{{items}}
+				</tbody>
+			</table>
+		</div>
+
+		<div class="totals">
+			<span><strong>Item total:</strong> £{{item_total}}</span>
+			<span><strong>Shipping:</strong> FREE</span>
+			<span class="total"><strong>Total:</strong> £{{total}}</span>
+		</div>
+
+		<div class="footer">
+			<p>If you have any questions about your order, please feel free to reach out to us at <a
+					href="mailto:mybooknookltd@gmail.com" target="_blank">mybooknookltd@gmail.com</a>.</p>
+			<p>2026 &copy; My Book Nook. All rights reserved.</p>
+		</div>
+
+	</div>
+</body>
+
+</html>

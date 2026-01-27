@@ -1,0 +1,43 @@
+.wrapper {
+	@apply w-full mx-auto px-4 justify-center text-center max-w-4xl mb-10 pt-10;
+}
+
+.container {
+	@apply flex flex-col md:flex-row gap-8 max-w-screen-2xl mx-auto;
+}
+
+.imageContainer {
+	@apply w-full md:w-1/2;
+}
+
+.image {
+	@apply w-full h-auto rounded-md;
+}
+
+.content {
+	@apply flex flex-col flex-grow md:w-1/2;
+}
+
+.types {
+	@apply flex flex-wrap gap-2 mt-5 justify-center;
+}
+
+.type {
+	@apply px-3 py-1 bg-branded-pink text-white rounded-md text-sm;
+}
+
+.title {
+	@apply text-4xl font-bold mb-4;
+}
+
+.date {
+	@apply text-base text-gray-600 mb-4;
+}
+
+.intro {
+	@apply text-lg text-gray-700;
+}
+
+.intro p {
+	@apply mb-0;
+}

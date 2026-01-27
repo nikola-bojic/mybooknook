@@ -1,0 +1,51 @@
+.wrapper {
+	@apply flex flex-col flex-grow mb-10;
+}
+
+.container {
+	@apply relative w-full mx-auto px-4 flex flex-col md:flex-row flex-grow mb-5 sm:max-w-[40rem] md:max-w-[48rem] lg:max-w-[64rem] xl:max-w-[80rem] gap-6;
+}
+
+.carousel {
+	@apply md:sticky md:top-36 flex flex-col justify-start items-start w-full md:w-1/2 order-1 md:order-1 self-start select-none;
+}
+
+.description {
+	@apply flex flex-col w-full md:w-1/2 justify-start items-start md:pl-10 order-2 md:order-2;
+}
+
+.descriptionInner {
+	@apply flex flex-col justify-start w-full;
+}
+
+.titleRow {
+	@apply flex flex-row justify-start md:items-center mb-2;
+}
+
+.title {
+	@apply flex flex-row flex-grow m-0 mr-5;
+}
+
+.priceRow {
+	@apply flex flex-row justify-start md:items-center mb-4;
+}
+
+.price {
+	@apply m-0 text-xl font-semibold bg-branded-pink text-white py-1 px-2 rounded-md mt-2;
+}
+
+.descriptionText {
+	@apply mb-4;
+}
+
+.actionsWrapper {
+	@apply flex flex-col w-full mt-auto pt-6;
+}
+
+.soldOut {
+	@apply text-white bg-branded-purple hover:bg-branded-pink py-2 px-4 rounded-md;
+}
+
+.slicesWrapper {
+	@apply w-full;
+}

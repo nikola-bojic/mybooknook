@@ -1,0 +1,79 @@
+.wrapper {
+	@apply relative w-full flex flex-col items-center;
+}
+
+.wrapperFullHeight {
+	@apply min-h-screen;
+}
+
+.innerWrapper {
+	@apply relative w-full max-w-screen-xl mx-auto flex flex-col items-center;
+}
+
+.contentContainer {
+	@apply w-full mx-auto px-4 mb-0 sm:max-w-[40rem] md:max-w-[48rem] lg:max-w-[64rem] xl:max-w-[80rem];
+}
+
+.contentLeft {
+	@apply flex justify-start;
+}
+
+.contentCenter {
+	@apply flex justify-center;
+}
+
+.contentRight {
+	@apply flex justify-end;
+}
+
+.accordionContainer {
+	@apply w-full mx-auto px-4 flex flex-col items-start justify-center pb-3 sm:max-w-[40rem] md:max-w-[48rem] lg:max-w-[64rem] xl:max-w-[80rem];
+}
+
+.faqItem {
+	@apply flex flex-col w-full mb-3;
+}
+
+.faqItemContainer {
+	@apply w-full bg-white border border-gray-300 rounded-md shadow-sm overflow-hidden transition-colors;
+}
+
+.faqItemContainerOpen {
+	@apply border-branded-pink;
+}
+
+.questionButton {
+	@apply flex flex-row items-center justify-between w-full cursor-pointer p-4 px-5 transition-colors text-left;
+}
+
+.question {
+	@apply m-0 flex-1;
+}
+
+.chevron {
+	@apply w-5 h-5 ml-4 flex-shrink-0 transition-transform duration-200;
+}
+
+.chevronOpen {
+	@apply rotate-180;
+}
+
+.answerContainer {
+	@apply px-5 pb-5 pt-0 max-w-screen-md;
+}
+
+.answerContent {
+	@apply mb-0;
+
+	p {
+		@apply mb-3;
+	}
+
+	p:last-child {
+		@apply mb-0 pb-0;
+	}
+
+	*:last-child {
+		@apply mb-0;
+	}
+}

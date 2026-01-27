@@ -1,0 +1,53 @@
+@reference "tailwindcss";
+
+.wrapper {
+	@apply relative w-full max-w-screen-xl mx-auto;
+}
+
+.richText {
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	ul,
+	ol {
+		@apply mb-5;
+	}
+
+	h1 {
+		@apply mb-10;
+	}
+
+	a {
+		@apply text-branded-pink hover:underline;
+	}
+
+	ul {
+		@apply list-disc list-outside ps-5 mb-10;
+
+		li {
+			@apply mb-2;
+		}
+	}
+
+	ol {
+		@apply list-decimal list-outside ps-5 mb-10;
+
+		li {
+			@apply mb-2;
+		}
+	}
+
+	p+h1,
+	p+h2,
+	p+h3,
+	p+h4,
+	p+h5,
+	p+h6 {
+		@apply mt-10;
+	}
+}

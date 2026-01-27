@@ -1,0 +1,82 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"slide": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"image",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8",
+										"width": 3456,
+										"height": 3456
+									},
+									"url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8?rect=0%2C1044%2C3456%2C1368&w=4320&h=1710",
+									"width": 4320,
+									"height": 1710,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 1044
+										},
+										"background": "transparent"
+									},
+									"alt": "labor",
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "where",
+									"type": "Text"
+								}
+							],
+							[
+								"subtitle",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "among",
+									"type": "Text"
+								}
+							],
+							[
+								"link",
+								{
+									"key": "70ba161b-8add-400c-ad47-309b371b7b0e",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://prismic.io",
+										"text": "indicate"
+									}
+								}
+							]
+						]
+					}
+				]
+			},
+			"autoplay": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"initial_slide": {
+				"__TYPE__": "FieldContent",
+				"value": "21",
+				"type": "Number"
+			}
+		},
+		"items": []
+	}
+]

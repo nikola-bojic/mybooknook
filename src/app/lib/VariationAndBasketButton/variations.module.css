@@ -1,0 +1,104 @@
+.container {
+	@apply flex flex-col mb-3;
+}
+
+.variationGroup {
+	@apply flex flex-col mb-3;
+}
+
+.variationLabel {
+	@apply mb-3 font-bold;
+}
+
+.variationsContainer {
+	@apply flex flex-row flex-wrap;
+}
+
+.variation {
+	@apply bg-white inline-flex items-center gap-2 border-2 rounded-md px-4 py-2 cursor-pointer m-0 mr-3 mb-3 whitespace-nowrap relative transition-colors;
+
+	&:hover {
+		@apply bg-gray-50 border-gray-400;
+	}
+
+	&.selected {
+		@apply bg-branded-pink border-branded-pink text-white;
+
+		&:hover {
+			@apply bg-branded-pink border-branded-pink;
+		}
+	}
+}
+
+.radioInput {
+	@apply absolute opacity-0 w-0 h-0;
+}
+
+.checkmark {
+	@apply flex items-center justify-center w-6 h-6 rounded-full bg-white text-branded-pink flex-shrink-0;
+}
+
+.checkmark svg {
+	@apply w-4 h-4;
+}
+
+.variationText {
+	@apply flex-1;
+}
+
+.nameInput {
+	@apply block w-full py-2 px-3 text-base font-normal leading-normal text-gray-900 bg-white bg-clip-padding border border-gray-300 rounded transition-colors relative max-w-[75rem];
+}
+
+.nameInput:focus {
+	@apply text-gray-900 bg-white border-blue-500 outline-none ring-4 ring-blue-200;
+}
+
+.quantityContainer {
+	@apply flex flex-row justify-start items-start mb-3;
+}
+
+.quantityLabel {
+	@apply inline-block text-center select-none m-0 mr-3 font-semibold w-auto;
+}
+
+.quantityButton {
+	@apply inline-block bg-gray-400 w-5 h-5 rounded-full text-white mx-2 mt-0.5 select-none text-center;
+	line-height: 1;
+
+	&:hover {
+		@apply bg-branded-pink;
+	}
+}
+
+.quantityValue {
+	@apply inline-block w-5 text-center select-none font-semibold;
+}
+
+.actionsContainer {
+	@apply flex flex-row flex-wrap mt-3;
+}
+
+.addToBasketButton {
+	@apply inline-block font-normal leading-normal text-center no-underline align-middle cursor-pointer select-none bg-branded-purple text-white rounded-md px-4 py-2 mr-3 whitespace-nowrap transition-colors border-none;
+
+	&.error {
+		@apply bg-red-600;
+	}
+
+	&:hover:not(:disabled) {
+		@apply bg-branded-pink;
+	}
+
+	&:disabled {
+		@apply opacity-60 cursor-not-allowed;
+	}
+}
+
+.viewAllLink {
+	@apply inline-block whitespace-nowrap py-3 font-bold text-base no-underline px-10;
+
+	&:hover {
+		@apply text-branded-pink;
+	}
+}

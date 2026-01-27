@@ -1,0 +1,37 @@
+{
+  "id": "contact_form",
+  "type": "SharedSlice",
+  "name": "Contact Form",
+  "description": "",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "confirmation_message": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Confirmation Message",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "error_message": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Error Message",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

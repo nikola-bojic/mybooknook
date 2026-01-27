@@ -1,0 +1,137 @@
+@reference "tailwindcss";
+
+.default {
+	@apply relative flex flex-col w-full h-full mx-auto py-24 lg:pt-40;
+	max-width: var(--max-content-width);
+
+	.main {
+		@apply px-10;
+	}
+}
+
+.full_width {
+	@apply relative flex flex-col w-full h-full;
+	max-width: var(--max-content-width);
+
+	.media_wrapper {
+		@apply w-full flex;
+
+		&.image_only {
+			@apply h-auto;
+		}
+
+		&.image_fallback {
+			@apply h-full object-cover absolute inset-0;
+		}
+
+		img {
+			@apply object-cover w-full h-full object-top;
+			object-position: 0;
+		}
+
+		.image_desktop {
+			@apply hidden lg:block;
+		}
+
+		.image_mobile {
+			@apply block lg:hidden;
+		}
+	}
+
+	.over {
+		@apply absolute bottom-0 z-10 w-full mb-5;
+
+		.h1 {
+			@apply mb-4;
+			line-height: 0.8889;
+
+			@variant lg {
+				font-size: 9rem;
+				letter-spacing: 0.03rem;
+			}
+		}
+
+		.copy {
+			@apply leading-tight mb-5 lg:mb-0;
+
+			p {
+				@apply leading-tight;
+				font-size: 3.25rem;
+			}
+		}
+	}
+}
+
+.homepage {
+	@apply relative flex flex-col w-full h-full mx-auto cursor-default select-none;
+	max-width: var(--max-content-width);
+
+	.media_wrapper {
+		@apply w-full flex;
+
+		&.image_only {
+			@apply h-auto;
+		}
+
+		&.image_fallback {
+			@apply h-full object-cover absolute inset-0;
+		}
+
+		img {
+			@apply object-cover w-full h-full;
+			object-position: 0;
+		}
+
+		.image_desktop {
+			@apply hidden lg:block;
+		}
+
+		.image_mobile {
+			@apply block lg:hidden;
+		}
+	}
+
+	.title {
+		@apply absolute z-10 top-0 bottom-0 my-auto right-0 left-auto h-fit pt-8 lg:pt-16 pb-6 pl-8 lg:pl-20 max-w-[34rem] lg:max-w-[47rem] w-full bg-white;
+
+		.top {
+			@apply mb-3 uppercase font-bold;
+
+			p {
+				@apply m-0;
+				font-family: var(--font-brodien), Arial, Helvetica, sans-serif;
+				font-size: 11rem;
+				line-height: 8rem;
+
+				@variant lg {
+					font-size: 14rem;
+					line-height: 10.1rem;
+					letter-spacing: 0.2rem;
+				}
+
+				strong {
+					@apply text-fuchsia-500;
+				}
+			}
+		}
+
+		.subtitle {
+			@apply font-bold;
+
+			p {
+				@apply m-0;
+				font-size: 2rem;
+
+				@variant lg {
+					font-size: 3.3rem;
+					line-height: 3.5rem;
+					letter-spacing: -0.02rem;
+				}
+
+				strong {
+					@apply text-fuchsia-500 font-bold;
+				}
+			}
+		}
+	}
+}

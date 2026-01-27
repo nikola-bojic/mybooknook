@@ -1,0 +1,44 @@
+.wrapper {
+	@apply w-full mx-auto px-4;
+}
+
+.content {
+	@apply w-full mx-auto;
+}
+
+/* Width variations */
+.contentWidth {
+	@apply max-w-2xl;
+}
+
+.wideWidth {
+	@apply max-w-4xl;
+}
+
+/* Alignment */
+.alignLeft {
+	@apply text-left;
+}
+
+.alignCenter {
+	@apply text-center;
+}
+
+.alignRight {
+	@apply text-right;
+}
+
+/* Quote variation */
+.quote {
+	@apply p-10 rounded-xl shadow-md;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p {
+		@apply w-full lg:w-2/3 mx-auto;
+	}
+}

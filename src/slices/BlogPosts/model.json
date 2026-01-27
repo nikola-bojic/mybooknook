@@ -1,0 +1,28 @@
+{
+  "id": "blog_posts",
+  "type": "SharedSlice",
+  "name": "BlogPosts",
+  "description": "BlogPosts",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "homepage": {
+          "type": "Boolean",
+          "config": {
+            "label": "Homepage",
+            "placeholder_false": "No",
+            "placeholder_true": "Yes",
+            "default_value": false
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

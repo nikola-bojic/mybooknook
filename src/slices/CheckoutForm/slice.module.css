@@ -1,0 +1,137 @@
+.emptyBasketContainer {
+	@apply flex flex-col w-full mt-3;
+}
+
+.container {
+	@apply w-full mx-auto px-4 flex flex-col justify-start items-center max-w-screen-lg;
+}
+
+.formContainer {
+	@apply flex flex-col w-full max-w-3xl border bg-white rounded-md shadow-md p-10 mb-10;
+}
+
+.formInner {
+	@apply flex flex-col;
+}
+
+.formSection {
+	@apply flex flex-col w-full justify-evenly mb-3;
+}
+
+.errorMessage {
+	@apply mb-5 w-full text-center border rounded-md bg-white pb-3;
+
+	a {
+		@apply no-underline text-red-500;
+	}
+}
+
+.formRow {
+	@apply flex flex-col sm:flex-row justify-start items-start mb-3 w-full;
+}
+
+.label {
+	@apply w-full sm:w-1/4 whitespace-nowrap mb-3 md:mb-0;
+}
+
+.inputContainer {
+	@apply w-full sm:w-3/4;
+}
+
+.inputWrap {
+	@apply relative w-full;
+
+	&.error {
+		@apply text-red-600;
+	}
+
+	&.error .input,
+	&.error .textarea {
+		@apply border-red-600;
+	}
+
+	&.valid .input,
+	&.valid .textarea {
+		@apply border-green-600;
+	}
+
+	&.mb2 {
+		@apply mb-2;
+	}
+}
+
+.input {
+	@apply block w-full py-2 px-3 text-base font-normal leading-normal text-gray-900 bg-white bg-clip-padding border border-gray-300 rounded transition-colors mb-1 max-w-[62.5rem];
+}
+
+.input:focus {
+	@apply text-gray-900 bg-white border-blue-500 outline-none ring-4 ring-blue-200;
+}
+
+.inputNoMargin {
+	@apply block w-full py-2 px-3 text-base font-normal leading-normal text-gray-900 bg-white bg-clip-padding border border-gray-300 rounded transition-colors max-w-[62.5rem];
+}
+
+.inputNoMargin:focus {
+	@apply text-gray-900 bg-white border-blue-500 outline-none ring-4 ring-blue-200;
+}
+
+.textarea {
+	@apply block w-full py-2 px-3 text-base font-normal leading-normal text-gray-900 bg-white bg-clip-padding border border-gray-300 rounded transition-colors mb-1 max-w-[75rem];
+}
+
+.textarea:focus {
+	@apply text-gray-900 bg-white border-blue-500 outline-none ring-4 ring-blue-200;
+}
+
+.errorText {
+	@apply flex flex-col justify-start items-start w-full;
+}
+
+.errorMessageText {
+	@apply text-red-600 mt-2 mb-1 md:mb-0;
+}
+
+.errorMessageTextNoMargin {
+	@apply text-red-600 mt-1 mb-3;
+}
+
+.errorMessageTextNoMarginTop {
+	@apply text-red-600 mt-0 mb-3;
+}
+
+.countryWarning {
+	@apply flex flex-col justify-start items-start w-full bg-[#191b1c] text-white mt-3 rounded-md p-3;
+}
+
+.countryWarningText {
+	@apply md:mb-0 text-sm;
+}
+
+.basketContainer {
+	@apply flex flex-col w-full mt-10;
+}
+
+.purchaseButtonContainer {
+	@apply flex flex-row justify-start items-center mt-5 mb-0;
+}
+
+.purchaseButtonWrapper {
+	@apply flex flex-col w-full md:w-auto;
+}
+
+.purchaseButton {
+	@apply relative w-full md:ml-auto md:w-[18.75rem] mb-0;
+}
+
+.validator {
+	@apply absolute top-0 left-0 w-full h-full z-[101] border-none min-h-[5rem] opacity-0;
+}
+
+.mt3 {
+	@apply mt-3;
+}
+
+.successContainer {
+	@apply w-full mx-auto px-4 flex flex-col justify-center lg:items-center pt-4 md:pt-0 sm:max-w-[40rem] md:max-w-[48rem] lg:max-w-[64rem] xl:max-w-[80rem];
+}

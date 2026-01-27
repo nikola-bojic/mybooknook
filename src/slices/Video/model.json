@@ -1,0 +1,400 @@
+{
+  "id": "video",
+  "type": "SharedSlice",
+  "name": "Video",
+  "description": "",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Full width video",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text above video",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item"
+          }
+        },
+        "video_file": {
+          "type": "Link",
+          "config": {
+            "label": "Video from Media Library",
+            "placeholder": "Select a video from Prismic media library",
+            "select": "media"
+          }
+        },
+        "video_embed": {
+          "type": "Embed",
+          "config": {
+            "label": "Video Embed (YouTube, Vimeo, etc.)",
+            "placeholder": "Paste a YouTube, Vimeo, or other video URL"
+          }
+        },
+        "background_colour": {
+          "type": "Color",
+          "config": {
+            "label": "Background Colour",
+            "placeholder": ""
+          }
+        },
+        "top_padding": {
+          "type": "Select",
+          "config": {
+            "label": "Top Padding",
+            "placeholder": "",
+            "options": [
+              "None",
+              "Small",
+              "Medium",
+              "Large"
+            ],
+            "default_value": "None"
+          }
+        },
+        "bottom_padding": {
+          "type": "Select",
+          "config": {
+            "label": "Bottom Padding",
+            "placeholder": "",
+            "options": [
+              "None",
+              "Small",
+              "Medium",
+              "Large"
+            ],
+            "default_value": "None"
+          }
+        },
+        "top_margin": {
+          "type": "Select",
+          "config": {
+            "label": "Top margin",
+            "placeholder": "",
+            "options": [
+              "None",
+              "Small",
+              "Medium",
+              "Large"
+            ],
+            "default_value": "None"
+          }
+        },
+        "bottom_margin": {
+          "type": "Select",
+          "config": {
+            "label": "Bottom margin",
+            "placeholder": "",
+            "options": [
+              "None",
+              "Small",
+              "Medium",
+              "Large"
+            ],
+            "default_value": "None"
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "contentWidthVideo",
+      "name": "Content width video",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text above video",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item"
+          }
+        },
+        "video_file": {
+          "type": "Link",
+          "config": {
+            "label": "Video from Media Library",
+            "placeholder": "Select a video from Prismic media library",
+            "select": "media"
+          }
+        },
+        "video_embed": {
+          "type": "Embed",
+          "config": {
+            "label": "Video Embed (YouTube, Vimeo, etc.)",
+            "placeholder": "Paste a YouTube, Vimeo, or other video URL"
+          }
+        },
+        "background_colour": {
+          "type": "Color",
+          "config": {
+            "label": "Background Colour",
+            "placeholder": ""
+          }
+        },
+        "top_margin": {
+          "type": "Select",
+          "config": {
+            "label": "Top margin",
+            "placeholder": "",
+            "options": [
+              "None",
+              "Small",
+              "Medium",
+              "Large"
+            ],
+            "default_value": "None"
+          }
+        },
+        "top_padding": {
+          "type": "Select",
+          "config": {
+            "label": "Top Padding",
+            "placeholder": "",
+            "options": [
+              "None",
+              "Small",
+              "Medium",
+              "Large"
+            ],
+            "default_value": "None"
+          }
+        },
+        "bottom_padding": {
+          "type": "Select",
+          "config": {
+            "label": "Bottom Padding",
+            "placeholder": "",
+            "options": [
+              "None",
+              "Small",
+              "Medium",
+              "Large"
+            ],
+            "default_value": "None"
+          }
+        },
+        "bottom_margin": {
+          "type": "Select",
+          "config": {
+            "label": "Bottom margin",
+            "placeholder": "",
+            "options": [
+              "None",
+              "Small",
+              "Medium",
+              "Large"
+            ],
+            "default_value": "None"
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "wideVideo",
+      "name": "Wide video",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text above video",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item"
+          }
+        },
+        "video_file": {
+          "type": "Link",
+          "config": {
+            "label": "Video from Media Library",
+            "placeholder": "Select a video from Prismic media library",
+            "select": "media"
+          }
+        },
+        "video_embed": {
+          "type": "Embed",
+          "config": {
+            "label": "Video Embed (YouTube, Vimeo, etc.)",
+            "placeholder": "Paste a YouTube, Vimeo, or other video URL"
+          }
+        },
+        "background_colour": {
+          "type": "Color",
+          "config": {
+            "label": "Background Colour",
+            "placeholder": ""
+          }
+        },
+        "top_margin": {
+          "type": "Select",
+          "config": {
+            "label": "Top margin",
+            "placeholder": "",
+            "options": [
+              "None",
+              "Small",
+              "Medium",
+              "Large"
+            ],
+            "default_value": "None"
+          }
+        },
+        "top_padding": {
+          "type": "Select",
+          "config": {
+            "label": "Top Padding",
+            "placeholder": "",
+            "options": [
+              "None",
+              "Small",
+              "Medium",
+              "Large"
+            ],
+            "default_value": "None"
+          }
+        },
+        "bottom_padding": {
+          "type": "Select",
+          "config": {
+            "label": "Bottom Padding",
+            "placeholder": "",
+            "options": [
+              "None",
+              "Small",
+              "Medium",
+              "Large"
+            ],
+            "default_value": "None"
+          }
+        },
+        "bottom_margin": {
+          "type": "Select",
+          "config": {
+            "label": "Bottom margin",
+            "placeholder": "",
+            "options": [
+              "None",
+              "Small",
+              "Medium",
+              "Large"
+            ],
+            "default_value": "None"
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "browserWidthVideo",
+      "name": "Browser width video",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text above video",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item"
+          }
+        },
+        "video_file": {
+          "type": "Link",
+          "config": {
+            "label": "Video from Media Library",
+            "placeholder": "Select a video from Prismic media library",
+            "select": "media"
+          }
+        },
+        "video_embed": {
+          "type": "Embed",
+          "config": {
+            "label": "Video Embed (YouTube, Vimeo, etc.)",
+            "placeholder": "Paste a YouTube, Vimeo, or other video URL"
+          }
+        },
+        "background_colour": {
+          "type": "Color",
+          "config": {
+            "label": "Background Colour",
+            "placeholder": ""
+          }
+        },
+        "top_margin": {
+          "type": "Select",
+          "config": {
+            "label": "Top margin",
+            "placeholder": "",
+            "options": [
+              "None",
+              "Small",
+              "Medium",
+              "Large"
+            ],
+            "default_value": "None"
+          }
+        },
+        "top_padding": {
+          "type": "Select",
+          "config": {
+            "label": "Top Padding",
+            "placeholder": "",
+            "options": [
+              "None",
+              "Small",
+              "Medium",
+              "Large"
+            ],
+            "default_value": "None"
+          }
+        },
+        "bottom_padding": {
+          "type": "Select",
+          "config": {
+            "label": "Bottom Padding",
+            "placeholder": "",
+            "options": [
+              "None",
+              "Small",
+              "Medium",
+              "Large"
+            ],
+            "default_value": "None"
+          }
+        },
+        "bottom_margin": {
+          "type": "Select",
+          "config": {
+            "label": "Bottom margin",
+            "placeholder": "",
+            "options": [
+              "None",
+              "Small",
+              "Medium",
+              "Large"
+            ],
+            "default_value": "None"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

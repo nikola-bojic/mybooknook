@@ -1,0 +1,32 @@
+.wrapper {
+	@apply w-full mx-auto px-4;
+
+	&.browserWidth {
+		@apply max-w-full px-0;
+
+		.image {
+			@apply rounded-none shadow-none;
+		}
+	}
+}
+
+.imageLink {
+	@apply block w-full;
+}
+
+.image {
+	@apply w-full h-auto rounded-md mx-auto shadow-md;
+}
+
+/* Width variations */
+.fullWidth .image {
+	@apply max-w-full;
+}
+
+.contentWidth .image {
+	@apply max-w-2xl;
+}
+
+.wideWidth .image {
+	@apply max-w-4xl;
+}

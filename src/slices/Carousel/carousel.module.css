@@ -1,0 +1,69 @@
+.wrapper {
+	@apply relative px-4;
+}
+
+.wrapper :global(.swiper) {
+	@apply w-full rounded-md overflow-hidden shadow-md;
+}
+
+.wrapper :global(.swiper-button-prev),
+.wrapper :global(.swiper-button-next) {
+	@apply w-10 h-10 bg-white text-branded-purple rounded-full shadow-md z-10 opacity-0 sm:opacity-100;
+}
+
+.wrapper :global(.swiper-button-prev):hover,
+.wrapper :global(.swiper-button-next):hover {
+	@apply bg-branded-purple text-white;
+}
+
+.wrapper :global(.swiper-button-prev)::after,
+.wrapper :global(.swiper-button-next)::after {
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.slide {
+	@apply relative w-full;
+}
+
+.link {
+	@apply block relative w-full;
+}
+
+.image {
+	@apply w-full;
+	display: block;
+}
+
+.image :global(img) {
+	@apply w-full h-auto;
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.content {
+	@apply bg-white md:shadow-lg rounded-lg p-10 mt-4 md:absolute md:top-1/2 md:left-1/2 md:bottom-auto md:right-auto w-full md:max-w-md md:mt-0 text-center cursor-default;
+	transform: none;
+
+	@screen md {
+		transform: translate(-50%, -50%);
+	}
+}
+
+.content h2 {
+	@apply mb-5;
+}
+
+.content p {
+	@apply text-base mb-3;
+}
+
+.button {
+	@apply inline-block mt-5 px-4 py-2 bg-branded-purple text-white rounded-md no-underline transition-colors;
+}
+
+.button:hover {
+	@apply bg-branded-pink;
+}

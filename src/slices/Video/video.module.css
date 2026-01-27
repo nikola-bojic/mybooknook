@@ -1,0 +1,70 @@
+.outerWrapper {
+	@apply w-full text-center;
+}
+
+.wrapper {
+	@apply w-full mx-auto px-4;
+}
+
+.textContent {
+	@apply mb-10 mx-auto;
+}
+
+/* Text content width variations to match video */
+.fullWidth .textContent {
+	@apply max-w-full;
+}
+
+.contentWidth .textContent {
+	@apply max-w-2xl;
+}
+
+.wideWidth .textContent {
+	@apply max-w-4xl;
+}
+
+.browserWidth .textContent {
+	@apply max-w-full;
+}
+
+.videoContainer {
+	@apply w-full relative mx-auto;
+	aspect-ratio: 16 / 9;
+}
+
+.video {
+	@apply w-full h-full rounded-md shadow-md mx-auto bg-black;
+}
+
+.embedWrapper {
+	@apply w-full h-full;
+}
+
+.embedWrapper iframe {
+	@apply w-full h-full absolute top-0 left-0 rounded-md shadow-md;
+}
+
+/* Width variations - all centered */
+.fullWidth .videoContainer {
+	@apply max-w-full mx-auto;
+}
+
+.contentWidth .videoContainer {
+	@apply max-w-2xl mx-auto;
+}
+
+.wideWidth .videoContainer {
+	@apply max-w-4xl mx-auto;
+}
+
+.browserWidth {
+	@apply max-w-full px-0;
+}
+
+.browserWidth .videoContainer {
+	@apply max-w-full mx-auto;
+}
+
+.browserWidth .video {
+	@apply rounded-none shadow-none;
+}

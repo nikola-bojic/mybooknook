@@ -1,0 +1,72 @@
+.wrapper {
+	--swiper-navigation-sides-offset: 1.25rem;
+	@apply flex flex-col justify-start items-start w-full h-full;
+}
+
+.mainSwiper {
+	@apply w-full mb-4 shadow-lg;
+}
+
+.mainSwiper :global(.swiper-button-prev),
+.mainSwiper :global(.swiper-button-next) {
+	@apply w-10 h-10 bg-white text-branded-purple rounded-full shadow-md z-10;
+}
+
+.mainSwiper :global(.swiper-button-prev):hover,
+.mainSwiper :global(.swiper-button-next):hover {
+	@apply bg-branded-purple text-white;
+}
+
+.mainSwiper :global(.swiper-button-prev)::after,
+.mainSwiper :global(.swiper-button-next)::after {
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.slide {
+	@apply flex flex-col w-full;
+}
+
+.slideContent {
+	@apply flex flex-col justify-start items-start w-full;
+}
+
+.imageContainer {
+	@apply flex flex-col relative w-full;
+}
+
+.image {
+	@apply w-full h-auto bg-white rounded-md;
+}
+
+.image :global(img) {
+	@apply w-full h-full object-cover object-center rounded-md;
+}
+
+.thumbsSwiper {
+	@apply w-full;
+}
+
+.thumbsSwiper :global(.swiper-wrapper) {
+	@apply flex flex-row;
+}
+
+.thumbSlide {
+	@apply w-[4rem] h-[4rem] cursor-pointer opacity-50 transition-opacity flex-shrink-0;
+}
+
+.thumbsSwiper :global(.swiper-slide-thumb-active) {
+	@apply opacity-100;
+}
+
+.thumbImage {
+	@apply w-full h-full rounded-md border-2 border-transparent transition-colors;
+}
+
+.thumbsSwiper :global(.swiper-slide-thumb-active) .thumbImage {
+	@apply border-branded-purple;
+}
+
+.thumbImage :global(img) {
+	@apply w-full h-full object-cover object-center rounded-md;
+}

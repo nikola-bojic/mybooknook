@@ -1,0 +1,29 @@
+.paymentSection {
+	@apply mb-4 md:text-right;
+
+	&.checkout {
+		.paymentTitle {
+			@apply text-center;
+		}
+
+		.paymentIcons {
+			@apply w-full justify-center max-w-full pt-10;
+		}
+	}
+
+	&.checkout {
+		@apply mt-10 mb-10;
+	}
+}
+
+.paymentTitle {
+	@apply font-medium mb-3;
+}
+
+.paymentIcons {
+	@apply flex flex-row gap-4 items-start justify-start max-w-md;
+}
+
+.paymentIcon {
+	@apply w-20 h-14 bg-white rounded-md px-4 shadow-md;
+}

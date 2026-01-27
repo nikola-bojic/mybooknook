@@ -1,0 +1,27 @@
+Make SVG a half of the object
+Select Curve
+    Rotation: 90
+    Scale: 100, 100, 100
+Go to Output settings
+    Image size: 3200x3200
+Go to Render
+    Render Engine: Workbench
+    Film: Tick Transparent
+
+Select Curve
+    Right click - convert to mesh
+    Tab
+    A 
+    Function + Backspace
+    Dissolve Faces
+
+    Modifiers
+    Screw
+    Y Axis
+    Steps: 100
+    Render: 100
+
+    Go to Material
+        Metallic: 0
+        Roughness: 0.5
+        Colour: as bright as possible (#0EF0E4)

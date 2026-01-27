@@ -1,0 +1,193 @@
+/* Empty basket state */
+.emptyBasketContainer {
+	@apply w-full mx-auto px-4 flex flex-col justify-center items-center;
+}
+
+.emptyBasketMessage {
+	@apply mb-5 w-full text-center border rounded-md bg-white p-10 max-w-screen-lg shadow-md text-xl font-semibold font-heading;
+
+	a {
+		@apply no-underline;
+
+		&:hover {
+			@apply text-[#191b1c];
+		}
+	}
+}
+
+/* Main container */
+.mainContainer {
+	@apply flex flex-col justify-center items-center max-w-screen-lg;
+}
+
+.mainContainerCheckout {
+	@apply w-full mx-auto px-5;
+}
+
+/* Products list */
+.productsList {
+	@apply flex flex-col mb-4 w-full border rounded-md p-5 py-0 shadow-md;
+}
+
+.productRow {
+	@apply flex flex-col md:flex-row justify-start w-full border-b h-full py-5;
+}
+
+.productRow:last-child {
+	@apply border-none;
+}
+
+/* Product image and mobile title section */
+.productImageSection {
+	@apply flex flex-col md:flex-row flex-grow items-start mb-3 md:mb-0 pe-5;
+}
+
+.imageSm {
+	@apply w-36 h-36 flex relative mb-5 md:mb-0;
+}
+
+.productImage {
+	@apply rounded-sm;
+}
+
+.mobileTitleContainer {
+	@apply flex md:hidden flex-col flex-grow-0;
+}
+
+.mobileTitleLink {
+	@apply flex md:hidden flex-grow;
+}
+
+/* Product details section */
+.productDetailsSection {
+	@apply flex flex-col flex-grow w-full justify-start items-start;
+}
+
+.desktopTitleContainer {
+	@apply hidden md:flex flex-col flex-grow justify-start items-start pt-1;
+}
+
+.link {
+	@apply no-underline inline-block;
+
+	&:hover .title {
+		@apply text-branded-pink;
+	}
+}
+
+.productTitle {
+	@apply text-xl flex flex-col flex-grow justify-start items-start md:mb-2;
+}
+
+.productDetails {
+	@apply flex flex-col flex-grow w-full justify-end;
+}
+
+.variationItem {
+	@apply mb-0;
+}
+
+.quantityContainer {
+	@apply flex flex-row justify-start items-start mt-2;
+}
+
+.mobilePrice {
+	@apply flex md:hidden mt-2;
+}
+
+.mobileRemove {
+	@apply inline-flex mt-3 w-auto me-auto;
+}
+
+/* Price and remove section */
+.priceSection {
+	@apply hidden md:flex flex-col ml-auto justify-between items-end whitespace-nowrap;
+}
+
+.productPrice {
+	@apply text-[1.1em] flex flex-col justify-start items-end mt-1;
+}
+
+.desktopRemove {
+	@apply mt-3 pt-1;
+}
+
+.remove {
+	@apply text-[80%] cursor-pointer;
+
+	&:hover {
+		@apply text-[#fd3f14];
+	}
+}
+
+/* Totals section */
+.totalsContainer {
+	@apply flex flex-col md:flex-row-reverse mb-4 w-full rounded-md p-4 bg-yellow-100;
+}
+
+.totalsColumn {
+	@apply flex flex-col ml-auto text-end;
+}
+
+.totalRow {
+	@apply flex flex-row justify-end items-end m-0 mb-1;
+}
+
+.totalLabel {
+	@apply whitespace-nowrap m-0 mr-2;
+}
+
+.figure {
+	@apply min-w-[7.5rem] inline-block text-end relative;
+}
+
+.total {
+	@apply text-[1.5em];
+}
+
+.hasDiscount {
+	@apply absolute h-0.5 w-[5.625rem] bg-[#fd1414] -right-4 top-[0.8125rem];
+	transform: rotate(8deg);
+}
+
+.totalPriceRow {
+	@apply flex flex-row justify-end items-end mt-3;
+}
+
+.totalLabelLarge {
+	@apply whitespace-nowrap m-1 mr-2;
+}
+
+.discountCodeContainer {
+	@apply flex flex-col;
+}
+
+/* Checkout button section */
+.checkoutButtonContainer {
+	@apply flex flex-row mb-5 w-full;
+}
+
+.checkoutButtonWrapper {
+	@apply flex flex-col ml-auto;
+}
+
+.checkoutButton {
+	@apply inline-block leading-normal text-center no-underline align-middle cursor-pointer select-none bg-branded-purple text-white rounded-md px-5 ml-3 transition-colors h-10 py-2 font-semibold hover:bg-branded-pink;
+}
+
+/* Country selector section */
+.countrySelectorContainer {
+	@apply flex flex-col md:flex-row md:justify-between items-center mb-4 w-full rounded-md p-4 bg-yellow-100;
+}
+
+.countrySelectorText {
+	@apply md:m-0 md:mr-3;
+}
+
+.clickableLink {
+	@apply underline cursor-pointer;
+
+	&:hover {
+		@apply text-branded-pink;
+	}
+}

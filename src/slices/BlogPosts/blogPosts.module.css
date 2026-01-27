@@ -1,0 +1,53 @@
+.wrapper {
+	@apply w-full mx-auto px-4;
+}
+
+.postsGrid {
+	@apply grid grid-cols-1 gap-8 md:gap-5 lg:gap-20 md:grid-cols-2 xl:grid-cols-3 mb-20;
+}
+
+.postsGridHomepage {
+	@apply md:grid-cols-1 lg:grid-cols-3;
+}
+
+.post {
+	@apply flex flex-col;
+}
+
+.link {
+	@apply flex flex-col h-full no-underline;
+}
+
+.imageContainer {
+	@apply w-full mb-4 overflow-hidden rounded-md;
+}
+
+.image {
+	@apply w-full h-auto rounded-md shadow-md;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+}
+
+.content {
+	@apply flex flex-col flex-grow;
+}
+
+.title {
+	@apply text-xl font-bold mb-2 transition-colors duration-200;
+}
+
+.link:hover .title {
+	@apply text-branded-pink;
+}
+
+.date {
+	@apply text-sm mb-3;
+}
+
+.excerpt {
+	@apply text-base;
+}
+
+.excerpt p {
+	@apply mb-0;
+}

@@ -1,0 +1,192 @@
+{
+  "id": "image",
+  "type": "SharedSlice",
+  "name": "Image",
+  "description": "",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Full width image",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {
+              "width": 5200
+            },
+            "thumbnails": []
+          }
+        },
+        "url": {
+          "type": "Link",
+          "config": {
+            "label": "URL",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": false
+          }
+        },
+        "bottom_margin": {
+          "type": "Select",
+          "config": {
+            "label": "Bottom margin",
+            "placeholder": "",
+            "options": [
+              "None",
+              "Small",
+              "Medium",
+              "Large"
+            ],
+            "default_value": "None"
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "contentWidthImage",
+      "name": "Content width image",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {
+              "width": 2340
+            },
+            "thumbnails": []
+          }
+        },
+        "url": {
+          "type": "Link",
+          "config": {
+            "label": "URL",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": false
+          }
+        },
+        "bottom_margin": {
+          "type": "Select",
+          "config": {
+            "label": "Bottom margin",
+            "placeholder": "",
+            "options": [
+              "None",
+              "Small",
+              "Medium",
+              "Large"
+            ],
+            "default_value": "None"
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "wideImage",
+      "name": "Wide image",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {
+              "width": 2340
+            },
+            "thumbnails": []
+          }
+        },
+        "url": {
+          "type": "Link",
+          "config": {
+            "label": "URL",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": false
+          }
+        },
+        "bottom_margin": {
+          "type": "Select",
+          "config": {
+            "label": "Bottom margin",
+            "placeholder": "",
+            "options": [
+              "None",
+              "Small",
+              "Medium",
+              "Large"
+            ],
+            "default_value": "None"
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "browserWidthImage",
+      "name": "Browser width image",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {
+              "width": 5200
+            },
+            "thumbnails": []
+          }
+        },
+        "url": {
+          "type": "Link",
+          "config": {
+            "label": "URL",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": false
+          }
+        },
+        "bottom_margin": {
+          "type": "Select",
+          "config": {
+            "label": "Bottom margin",
+            "placeholder": "",
+            "options": [
+              "None",
+              "Small",
+              "Medium",
+              "Large"
+            ],
+            "default_value": "None"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
