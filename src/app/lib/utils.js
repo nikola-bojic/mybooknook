@@ -399,6 +399,15 @@ export const fetchLinksConfig = {
 		'product_category.data',
 	],
 
+	// FetchLinks for blog posts (includes products and categories for Gallery slices)
+	post: [
+		...productFields,
+		'product_category.name',
+		'product_category.plural_url',
+		'product_category.price',
+		'product_category.data',
+	],
+
 	// FetchLinks for product documents (includes categories)
 	productDocument: productCategoryFields,
 
