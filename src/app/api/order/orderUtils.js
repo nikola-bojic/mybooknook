@@ -49,8 +49,19 @@ export const sendOrderEmails = async (orderData) => {
 			.replace('{{discount}}', discount ? `<span><strong>Discount:</strong> £${discount.toFixed(2)}</span>` : ``)
 			.replace('{{items}}', orderData?.purchase_units[0]?.items.map(item => {
 
-				const description = JSON.parse(item.description);
-				const descriptionElements = Object.entries(description).map(([key, value]) => `<p>${key}: ${value}</p>`).join('');
+				// Try to parse description as JSON (for variations), fallback to plain string
+				let descriptionElements = '';
+				try {
+					const description = JSON.parse(item.description);
+					if (typeof description === 'object' && description !== null) {
+						descriptionElements = Object.entries(description)
+							.map(([key, value]) => `<p>${key}: ${value}</p>`)
+							.join('');
+					}
+				} catch (e) {
+					// Description is not JSON, skip variations display
+					descriptionElements = '';
+				}
 
 				return `
                     <tr>

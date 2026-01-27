@@ -75,14 +75,13 @@ export async function POST(request, res) {
 					items: formattedItems,
 					shipping: {
 						name: {
-							customer: customer?.name
+							full_name: customer?.name
 						},
 						address: {
 							address_line_1: customer?.address_line_1,
 							admin_area_2: customer?.address_line_2,
 							admin_area_1: customer?.address_line_3,
 							postal_code: customer?.postcode,
-							// country_code: customer?.country_code
 							country_code: 'GB'
 						}
 					}
