@@ -38,13 +38,13 @@ export async function generateMetadata({ params }) {
 
 	// Get meta data
 	const title = pageData?.post?.data?.meta_title
-		? Settings.meta.title + ' - ' + pageData.post.data.meta_title
+		? pageData.post.data.meta_title + ' - ' + Settings.meta.title
 		: pageData?.product?.data?.meta_title
-			? Settings.meta.title + ' - ' + pageData.product.data.meta_title
+			? pageData.product.data.meta_title + ' - ' + Settings.meta.title
 			: pageData?.category?.data?.meta_title
-				? Settings.meta.title + ' - ' + pageData.category.data.meta_title
+				? pageData.category.data.meta_title + ' - ' + Settings.meta.title
 				: pageData?.page?.data?.meta_title
-					? Settings.meta.title + ' - ' + pageData.page.data.meta_title
+					? pageData.page.data.meta_title + ' - ' + Settings.meta.title
 					: Settings.meta.title;
 
 	const description = pageData?.post?.data?.meta_description
