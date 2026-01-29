@@ -1,5 +1,6 @@
 import { createClient } from "@/prismicio";
 import * as prismic from "@prismicio/client";
+import { Settings } from "@/app/lib/settings";
 
 export const countriesByContinent = {
 	uk: ["GB"],
@@ -449,8 +450,9 @@ export async function getPageData(params) {
 	}
 
 	try {
-		// Check if this is a post route (/inspiration/:uid)
-		if (params?.page?.[0] === 'inspiration' && params?.page?.[1]) {
+		// Check if this is a post route (e.g. /blog/:uid from Settings.inspirationPrefix)
+		const inspirationSegment = Settings.inspirationPrefix.replace(/^\//, "");
+		if (params?.page?.[0] === inspirationSegment && params?.page?.[1]) {
 			try {
 				post = await client.getByUID("post", params?.page?.[1], {
 					fetchLinks: fetchLinksConfig.post,

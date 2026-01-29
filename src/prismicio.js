@@ -1,6 +1,7 @@
 import * as prismic from "@prismicio/client";
 import * as prismicNext from "@prismicio/next";
 import config from "../slicemachine.config.json";
+import { Settings } from "@/app/lib/settings";
 
 /**
  * The project's Prismic repository name.
@@ -34,7 +35,7 @@ const routes = [
   },
   {
   	type: "post",
-  	path: "/inspiration/:uid",
+  	path: `${Settings.inspirationPrefix}/:uid`,
   }
 ];
 
